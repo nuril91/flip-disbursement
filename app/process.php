@@ -1,5 +1,5 @@
 <?php
-include "Main.php";
+require_once __DIR__ . "/Main.php";
 $db = new Main();
 
 $action = $_GET['action'];

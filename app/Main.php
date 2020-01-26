@@ -13,7 +13,7 @@ class Main
 
     public function __construct()
     {
-        $config = include 'config.php';
+        $config = include __DIR__ . '/../config.php';
         !$config ? $config = include '../config.php' : include 'config.php';
 
         $this->db = $config['database']['db'];
